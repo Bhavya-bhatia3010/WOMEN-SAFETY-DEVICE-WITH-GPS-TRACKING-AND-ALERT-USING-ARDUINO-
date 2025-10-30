@@ -57,7 +57,7 @@ void sendEmergencyMessage() {
 void displayGPSInfo() {
   if (gps.location.isValid()) {
     Serial.print("Latitude: ");
-    18 | P a g e
+    
     Serial.println(gps.location.lat(), 6);
     Serial.print("Longitude: ");
     Serial.println(gps.location.lng(), 6);
@@ -74,3 +74,4 @@ void displayGSMInfo()
   }
   gsmSerial.println("AT");
 }
+
